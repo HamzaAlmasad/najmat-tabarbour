@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>من نحن | مدرسة نجمة طبربور الدولية</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <style>
+    :root { --main-blue: #1a2a6c; --main-red: #b21f1f; --main-gold: #fdbb2d; }
+    body { font-family: 'Cairo', sans-serif; background-color: #f8f9fa; }
+
+    /* الهيدر الاحترافي */
+    .header-glass {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 3px solid var(--main-gold);
+      padding: 12px 0;
+    }
+    .sitename { font-size: 1.8rem; font-weight: 900; background: linear-gradient(45deg, #1a2a6c, #b21f1f); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+
+    /* الشريط الملون المتقلب */
+    .hero-strip {
+      background: linear-gradient(-45deg, #1a2a6c, #2a5298, #b21f1f, #fdbb2d);
+      background-size: 400% 400%; animation: gradientBG 10s ease infinite;
+      padding: 80px 0; color: white; text-align: center; border-bottom: 5px solid var(--main-gold);
+    }
+    @keyframes gradientBG { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+
+    /* الأقسام العامة */
+    .about-section { padding: 60px 0; }
+    .section-title { color: var(--main-blue); font-weight: 900; margin-bottom: 30px; position: relative; display: inline-block; }
+    .section-title::after { content: ''; width: 50%; height: 4px; background: var(--main-gold); position: absolute; bottom: -10px; right: 0; }
+
+    .facility-card {
+      background: white; border-radius: 15px; padding: 25px; text-align: center;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-bottom: 4px solid var(--main-blue); transition: 0.3s;
+    }
+    .facility-card:hover { transform: translateY(-5px); border-bottom-color: var(--main-red); }
+    .facility-card i { font-size: 2.5rem; color: var(--main-gold); margin-bottom: 15px; display: block; }
+
+    .price-card {
+      background: white; border-radius: 20px; padding: 30px; border-top: 5px solid var(--main-blue); height: 100%;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05); transition: 0.3s;
+    }
+    .discount-badge { background: var(--main-red); color: white; padding: 4px 12px; border-radius: 50px; font-weight: 700; }
+    .offer-box {
+      background: linear-gradient(135deg, #1a2a6c, #b21f1f); color: white; border-radius: 20px; padding: 40px; margin-top: 50px; text-align: center;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="header-glass sticky-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="text-decoration-none"><h1 class="sitename m-0">نجمة طبربور</h1></a>
+      <nav class="navmenu d-none d-lg-block">
+        <ul class="d-flex list-unstyled gap-4 mb-0">
+          <li><a href="index.html" class="text-dark fw-bold text-decoration-none">الرئيسية</a></li>
+          <li><a href="about.html" class="text-danger fw-bold text-decoration-none">من نحن</a></li>
+          <li><a href="trainers.html" class="text-dark fw-bold text-decoration-none">كادرنا</a></li>
+          <li><a href="events.html" class="text-dark fw-bold text-decoration-none">الأنشطة</a></li>
+          <li><a href="contact.html" class="text-dark fw-bold text-decoration-none">اتصل بنا</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-danger rounded-pill px-4 fw-bold shadow-sm" href="contact.html">سجل الآن</a>
+    </div>
+  </header>
+
+  <section class="hero-strip">
+    <div class="container" data-aos="zoom-in">
+      <h2 style="font-size: 3.5rem; font-weight: 900;">من نحن</h2>
+      <p class="fs-4">مدرسة نجمة طبربور الدولية.. حيث يبدأ طريق التميز</p>
+    </div>
+  </section>
+
+  <section class="about-section container">
+    <div class="row align-items-center">
+      <div class="col-lg-6" data-aos="fade-left">
+        <h3 class="section-title">رؤيتنا ورسالتنا</h3>
+        <p class="lead">تعد مدرسة نجمة طبربور الدولية صرحاً تعليمياً متميزاً يسعى لبناء جيل مسلح بالعلم والقيم والأدوات التقنية الحديثة.</p>
+        <p>نحن نؤمن بأن التعليم لا يقتصر على الكتب فقط، بل هو تجربة متكاملة تشمل تنمية الشخصية، واكتشاف المواهب، والتمكين الرقمي في بيئة تعليمية آمنة ومحفزة تتبع أعلى المعايير الدولية والوطنية.</p>
+      </div>
+      <div class="col-lg-6" data-aos="fade-right">
+        <img src="assets/img/about-school.jpg" class="img-fluid rounded-4 shadow" alt="مبنى المدرسة">
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section bg-light">
+    <div class="container text-center">
+      <h3 class="section-title">مرافقنا المتميزة</h3>
+      <div class="row g-4 mt-4">
+        <div class="col-md-3" data-aos="zoom-in"><div class="facility-card"><i class="bi bi-pc-display"></i><h5>مختبرات حاسوب</h5><p class="small text-muted">مجهزة بأحدث الأجهزة والبرمجيات للتعليم التقني.</p></div></div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="100"><div class="facility-card"><i class="bi bi-flask"></i><h5>مختبرات علمية</h5><p class="small text-muted">بيئة آمنة لإجراء التجارب العلمية والكيميائية.</p></div></div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="200"><div class="facility-card"><i class="bi bi-trophy"></i><h5>ملاعب رياضية</h5><p class="small text-muted">مساحات واسعة لممارسة كرة القدم والألعاب البدنية.</p></div></div>
+        <div class="col-md-3" data-aos="zoom-in" data-aos-delay="300"><div class="facility-card"><i class="bi bi-book"></i><h5>مكتبة تفاعلية</h5><p class="small text-muted">تحتوي على مراجع متنوعة وركن للقراءة الهادئة.</p></div></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="about-section container">
+    <h3 class="section-title d-block text-center mb-5">الرسوم الدراسية والعروض</h3>
+    <div class="row g-4">
+      <div class="col-lg-4" data-aos="fade-up">
+        <div class="price-card text-center">
+          <h4 class="fw-bold mb-3" style="color: var(--main-blue);">المرحلة الأساسية</h4>
+          <p class="text-danger fw-bold">من الصف الرابع حتى السادس</p>
+          <hr>
+          <ul class="list-unstyled text-end px-2">
+            <li><i class="bi bi-check-circle-fill text-success ms-2"></i> التركيز على المهارات الأساسية</li>
+            <li><i class="bi bi-check-circle-fill text-success ms-2"></i> برامج لغة إنجليزية مكثفة</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="100">
+        <div class="price-card text-center">
+          <h4 class="fw-bold mb-3" style="color: var(--main-blue);">خصومات الإخوة</h4>
+          <p class="text-muted">خصم خاص وتقديراً لعائلاتنا</p>
+          <hr>
+          <div class="d-flex justify-content-between mb-2"><span>الأخ الأول</span> <span class="discount-badge">5%</span></div>
+          <div class="d-flex justify-content-between mb-2"><span>الأخ الثاني</span> <span class="discount-badge">10%</span></div>
+          <div class="d-flex justify-content-between"><span>الأخ الثالث</span> <span class="discount-badge">20%</span></div>
+        </div>
+      </div>
+      <div class="col-lg-4" data-aos="fade-up" data-aos-delay="200">
+        <div class="price-card text-center">
+          <h4 class="fw-bold mb-3" style="color: var(--main-blue);">مرحلة التوجيهي</h4>
+          <p class="text-danger fw-bold">المسار الأكاديمي فقط</p>
+          <hr>
+          <ul class="list-unstyled text-end px-2">
+            <li><i class="bi bi-check-circle-fill text-success ms-2"></i> كادر نخبة من معلمي التوجيهي</li>
+            <li><i class="bi bi-check-circle-fill text-success ms-2"></i> خطط متابعة حثيثة للطلاب</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="offer-box" data-aos="zoom-in">
+      <h2 class="fw-bold mb-2">مواصلات مجانية</h2>
+      <p class="fs-5">عند التسجيل المبكر والدفع (كاش) لكامل الرسوم</p>
+      <div class="bg-white text-dark d-inline-block px-4 py-2 rounded-pill fw-bold">
+        عرض متاح حتى تاريخ: 30 / 04 / 2026
+      </div>
+    </div>
+  </section>
+
+  <footer class="py-4 text-center mt-5">
+    <p class="text-muted small">© 2026 مدرسة نجمة طبربور الدولية - Amman, Jordan</p>
+  </footer>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script> AOS.init({ duration: 1000, once: true }); </script>
+</body>
+</html>

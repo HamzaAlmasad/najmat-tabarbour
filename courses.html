@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>المراحل الدراسية والمنصة | مدرسة نجمة طبربور الدولية</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <style>
+    :root { 
+      --main-blue: #1a2a6c; 
+      --main-red: #b21f1f; 
+      --main-gold: #fdbb2d; 
+    }
+    body { font-family: 'Cairo', sans-serif; background-color: #f8f9fa; margin: 0; }
+
+    /* الهيدر */
+    .header-glass {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 3px solid var(--main-gold);
+      padding: 12px 0;
+    }
+    .sitename { 
+      font-size: 1.8rem; font-weight: 900; 
+      background: linear-gradient(45deg, #1a2a6c, #b21f1f); 
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; 
+    }
+
+    /* الشريط المتقلب */
+    .hero-strip {
+      background: linear-gradient(-45deg, #1a2a6c, #b21f1f, #2a5298, #fdbb2d);
+      background-size: 400% 400%; animation: gradientBG 10s ease infinite;
+      padding: 100px 0; color: white; text-align: center; border-bottom: 5px solid var(--main-gold);
+    }
+    @keyframes gradientBG { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+
+    /* الكروت */
+    .course-card { 
+      background: white; border-radius: 25px; padding: 40px 20px; text-align: center; 
+      box-shadow: 0 15px 35px rgba(0,0,0,0.08); border-top: 6px solid var(--main-blue); 
+      transition: 0.4s; height: 100%; display: flex; flex-direction: column; justify-content: space-between;
+    }
+    .course-card:hover { transform: translateY(-10px); border-top-color: var(--main-red); }
+
+    .icon-box { 
+      width: 80px; height: 80px; background: #f8f9fa; margin: 0 auto 20px; 
+      border-radius: 50%; display: flex; align-items: center; justify-content: center;
+      font-size: 2.5rem; color: var(--main-blue); border: 1px solid #eee; transition: 0.3s;
+    }
+    .course-card:hover .icon-box { background: var(--main-gold); color: white; }
+
+    .stage-title { color: var(--main-blue); font-weight: 800; font-size: 1.5rem; margin-bottom: 5px; }
+    .stage-range { color: var(--main-red); font-weight: 700; display: block; margin-bottom: 15px; }
+
+    /* زر المنصة الجديد */
+    .btn-platform {
+      background: linear-gradient(45deg, var(--main-blue), #2a5298);
+      color: white; border: none; padding: 10px 20px; border-radius: 50px;
+      font-weight: 600; font-size: 0.9rem; transition: 0.3s; margin-top: 20px;
+      text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    }
+    .btn-platform:hover { background: var(--main-red); color: white; box-shadow: 0 5px 15px rgba(178, 31, 31, 0.3); }
+    .btn-platform i { font-size: 1.1rem; }
+
+    .btn-back { background: #666; color: white; padding: 12px 35px; border-radius: 50px; text-decoration: none; }
+  </style>
+</head>
+
+<body>
+
+  <header class="header-glass sticky-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="text-decoration-none"><h1 class="sitename m-0">نجمة طبربور</h1></a>
+      <nav class="navmenu d-none d-lg-block">
+        <ul class="d-flex list-unstyled gap-4 mb-0">
+          <li><a href="index.html" class="text-dark fw-bold text-decoration-none">الرئيسية</a></li>
+          <li><a href="about.html" class="text-dark fw-bold text-decoration-none">من نحن</a></li>
+          <li><a href="trainers.html" class="text-dark fw-bold text-decoration-none">كادرنا</a></li>
+          <li><a href="courses.html" class="text-danger fw-bold text-decoration-none">المراحل الدراسية</a></li>
+          <li><a href="events.html" class="text-dark fw-bold text-decoration-none">الأنشطة</a></li>
+          <li><a href="contact.html" class="text-dark fw-bold text-decoration-none">اتصل بنا</a></li>
+        </ul>
+      </nav>
+      <a class="btn btn-danger rounded-pill px-4 fw-bold shadow-sm" href="contact.html">سجل الآن</a>
+    </div>
+  </header>
+
+  <section class="hero-strip">
+    <div class="container" data-aos="zoom-in">
+      <h1 style="font-size: 3.5rem; font-weight: 900;">بوابتنا التعليمية</h1>
+      <p class="fs-4 fw-light">استكشف مراحلنا الدراسية وانضم لمنصتنا الذكية</p>
+    </div>
+  </section>
+
+  <main class="py-5 container">
+    <div class="row g-4">
+      
+      <div class="col-lg-3 col-md-6" data-aos="fade-up">
+        <div class="course-card">
+          <div>
+            <div class="icon-box"><i class="bi bi-person-badge"></i></div>
+            <h3 class="stage-title">الابتدائية</h3>
+            <span class="stage-range">من الصف 1 إلى 3</span>
+            <p class="text-muted small">تأسيس لغوي وعلمي متين بأساليب تعليمية حديثة.</p>
+          </div>
+          <a href="#" class="btn-platform"><i class="bi bi-laptop"></i> الدخول للمنصة</a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+        <div class="course-card">
+          <div>
+            <div class="icon-box"><i class="bi bi-book-half"></i></div>
+            <h3 class="stage-title">الأساسية</h3>
+            <span class="stage-range">من الصف 4 إلى 6</span>
+            <p class="text-muted small">تنمية مهارات التفكير الناقد والبحث المعرفي المستمر.</p>
+          </div>
+          <a href="#" class="btn-platform"><i class="bi bi-laptop"></i> الدخول للمنصة</a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+        <div class="course-card">
+          <div>
+            <div class="icon-box"><i class="bi bi-lightbulb"></i></div>
+            <h3 class="stage-title">الإعدادية</h3>
+            <span class="stage-range">من الصف 7 إلى 10</span>
+            <p class="text-muted small">بناء شخصية الطالب وتعميق معارفه في مختلف العلوم.</p>
+          </div>
+          <a href="#" class="btn-platform"><i class="bi bi-laptop"></i> الدخول للمنصة</a>
+        </div>
+      </div>
+
+      <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+        <div class="course-card">
+          <div>
+            <div class="icon-box"><i class="bi bi-mortarboard-fill"></i></div>
+            <h3 class="stage-title">الثانوية</h3>
+            <span class="stage-range">التوجيهي (الأكاديمي)</span>
+            <p class="text-muted small">إعداد نخبة الطلاب للتميز في الامتحانات الوطنية والجامعية.</p>
+          </div>
+          <a href="#" class="btn-platform"><i class="bi bi-laptop"></i> الدخول للمنصة</a>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="text-center mt-5">
+      <a href="index.html" class="btn-back">العودة للرئيسية</a>
+    </div>
+  </main>
+
+  <footer class="py-4 text-center mt-5 border-top">
+    <p class="text-muted small">© 2026 مدرسة نجمة طبربور الدولية - Amman, Jordan</p>
+  </footer>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script> AOS.init({ duration: 1000, once: true }); </script>
+</body>
+</html>

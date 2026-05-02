@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>بوابة التوظيف | مدرسة نجمة طبربور الدولية</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <style>
+    :root { --main-blue: #1a2a6c; --main-red: #b21f1f; --main-gold: #fdbb2d; }
+    body { font-family: 'Cairo', sans-serif; background-color: #f8f9fa; margin: 0; }
+
+    .hero-strip {
+      background: linear-gradient(-45deg, #1a2a6c, #b21f1f, #fdbb2d, #24c6dc);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+      padding: 100px 0; color: white; text-align: center; border-bottom: 5px solid var(--main-gold);
+    }
+    @keyframes gradientBG { 0% { background-position: 0% 50%; } 50% { background-position: 100% 50%; } 100% { background-position: 0% 50%; } }
+
+    .form-container {
+      background: white; border-radius: 25px; padding: 40px;
+      box-shadow: 0 15px 45px rgba(0,0,0,0.1); margin-top: -50px;
+      border-top: 5px solid var(--main-blue);
+    }
+
+    .form-label { font-weight: 700; color: var(--main-blue); }
+    .form-control { border-radius: 10px; padding: 12px; border: 1px solid #ddd; }
+    .btn-submit { 
+      background: linear-gradient(45deg, var(--main-blue), var(--main-red));
+      color: white; padding: 12px 40px; border-radius: 50px; font-weight: 700; border: none; transition: 0.3s;
+    }
+    .btn-submit:hover { transform: scale(1.05); opacity: 0.9; color: white; }
+    
+    .vacancy-card {
+      background: white; border-radius: 15px; padding: 25px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05); transition: 0.3s;
+      border-right: 5px solid var(--main-red);
+    }
+    .vacancy-card:hover { transform: translateY(-5px); box-shadow: 0 10px 25px rgba(0,0,0,0.1); }
+  </style>
+</head>
+
+<body>
+
+  <section class="hero-strip">
+    <div class="container" data-aos="zoom-in">
+      <h2 style="font-size: 3.5rem; font-weight: 900;">بوابة التوظيف</h2>
+      <p class="fs-4">انضم إلى فريق التميز في مدرسة نجمة طبربور</p>
+    </div>
+  </section>
+
+  <main class="container py-5">
+    <div class="row justify-content-center">
+      <div class="col-lg-9">
+        <div class="form-container" data-aos="fade-up">
+          <h3 class="text-center fw-bold mb-4" style="color: var(--main-blue);">تقديم طلب توظيف</h3>
+          
+          <form>
+            <div class="row g-3">
+              <div class="col-md-6">
+                <label class="form-label">الاسم الكامل</label>
+                <input type="text" class="form-control" placeholder="الاسم الرباعي" required>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">التخصص المطلوب</label>
+                <select class="form-select form-control" required>
+                  <option value="" disabled selected>اختر القسم/التخصص...</option>
+                  <option>قسم التكنولوجيا والمهارات الرقمية</option>
+                  <option>قسم الرياضيات</option>
+                  <option>قسم العلوم (كيمياء، فيزياء، أحياء)</option>
+                  <option>قسم اللغة العربية</option>
+                  <option>قسم اللغة الإنجليزية</option>
+                  <option>قسم التربية الإسلامية</option>
+                  <option>قسم الدراسات الاجتماعية</option>
+                  <option>قسم التعليم المهني</option>
+                  <option>تخصصات أخرى / إداري</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">سنوات الخبرة</label>
+                <select class="form-select form-control" required>
+                  <option value="" disabled selected>اختر عدد السنوات...</option>
+                  <option value="0">خريج جديد (بدون خبرة)</option>
+                  <option value="1-3">من 1 إلى 3 سنوات</option>
+                  <option value="4-7">من 4 إلى 7 سنوات</option>
+                  <option value="8+">أكثر من 8 سنوات</option>
+                </select>
+              </div>
+
+              <div class="col-md-6">
+                <label class="form-label">رقم الهاتف</label>
+                <input type="tel" class="form-control" placeholder="07XXXXXXXX" required>
+              </div>
+
+              <div class="col-md-12">
+                <label class="form-label">السيرة الذاتية (CV)</label>
+                <input type="file" class="form-control" required>
+                <small class="text-muted">نقبل ملفات PDF أو Word فقط.</small>
+              </div>
+
+              <div class="col-12 text-center mt-4">
+                <button type="submit" class="btn-submit">إرسال الطلب</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5 pt-4">
+      <div class="col-12 text-center mb-4">
+        <h3 class="fw-bold" style="color: var(--main-blue);">الشواغر الحالية المتاحة</h3>
+      </div>
+      
+      <div class="col-md-6 mb-4" data-aos="fade-right">
+        <div class="vacancy-card">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4 class="fw-bold m-0" style="color: var(--main-blue);">معلم/ة كيمياء</h4>
+            <span class="badge bg-success rounded-pill p-2 px-3">متاح حالياً</span>
+          </div>
+          <p class="text-muted small">المتطلبات: بكالوريوس كيمياء، خبرة سابقة في المناهج، والقدرة على التعامل مع المختبرات العلمية.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-4" data-aos="fade-left">
+        <div class="vacancy-card">
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h4 class="fw-bold m-0" style="color: var(--main-blue);">معلم/ة لغة عربية</h4>
+            <span class="badge bg-success rounded-pill p-2 px-3">متاح حالياً</span>
+          </div>
+          <p class="text-muted small">المتطلبات: تخصص لغة عربية، مهارة عالية في القواعد والبلاغة، وخبرة في التدريس المباشر.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-4 text-center mt-5">
+    <p class="text-muted small">© 2026 مدرسة نجمة طبربور الدولية - قسم الموارد البشرية</p>
+  </footer>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script> AOS.init({ duration: 1000, once: true }); </script>
+</body>
+</html>

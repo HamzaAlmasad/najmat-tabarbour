@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>نجمة طبربور | الرئيسية</title>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-gradient: linear-gradient(45deg, #1a2a6c, #b21f1f, #fdbb2d);
+      --main-blue: #1a2a6c;
+      --main-red: #b21f1f;
+      --main-gold: #fdbb2d;
+    }
+
+    body { font-family: 'Cairo', sans-serif; background: #f4f7f9; overflow-x: hidden; }
+
+    /* --- الهيدر الزجاجي --- */
+    .header-glass {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      padding: 15px 0;
+      border-bottom: 3px solid var(--main-gold);
+    }
+
+    .logo-text { font-size: 1.8rem; font-weight: 900; background: linear-gradient(45deg, var(--main-blue), var(--main-red)); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+    .logo-text span { color: var(--main-gold); -webkit-text-fill-color: var(--main-gold); }
+
+    /* --- قسم الـ Hero الضخم --- */
+    .hero-full {
+      position: relative;
+      min-height: 90vh; /* زيادة الارتفاع ليكون أضخم */
+      background: var(--primary-gradient);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+      display: flex;
+      align-items: center;
+      padding: 60px 0;
+      clip-path: polygon(0 0, 100% 0, 100% 95%, 0% 100%);
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* تكبير الصورة وجعلها تغطي مساحة أكبر */
+    .hero-img-container {
+      position: relative;
+      z-index: 2;
+    }
+
+    .hero-img-container img {
+      width: 100%;
+      max-width: 650px; /* تكبير الصورة */
+      height: 450px;
+      object-fit: cover;
+      border-radius: 40px;
+      border: 8px solid rgba(255, 255, 255, 0.3);
+      box-shadow: 0 25px 50px rgba(0,0,0,0.3);
+      transform: rotate(-2deg); /* إمالة بسيطة لإعطاء طابع عصري */
+    }
+
+    .hero-content h2 { font-size: 4rem; font-weight: 900; color: white; line-height: 1.2; }
+    .hero-content p { font-size: 1.4rem; color: rgba(255,255,255,0.9); margin: 25px 0; }
+
+    /* --- الأزرار والقائمة بجانب بعض --- */
+    .nav-links-container {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .navmenu ul {
+      display: flex;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      gap: 25px; /* مسافة بين الروابط */
+    }
+
+    .navmenu ul li a {
+      text-decoration: none;
+      color: var(--main-blue);
+      font-weight: 700;
+      transition: 0.3s;
+    }
+
+    .navmenu ul li a:hover { color: var(--main-red); }
+
+    /* --- قسم المميزات (بجانب بعض) --- */
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* جعلهم بجانب بعض تلقائياً */
+      gap: 30px;
+      margin-top: -100px; /* لرفع الكروت فوق الـ Hero قليلاً */
+      position: relative;
+      z-index: 10;
+    }
+
+    .feature-box {
+      background: white;
+      padding: 40px;
+      border-radius: 30px;
+      text-align: center;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+      transition: 0.4s;
+      border: 1px solid rgba(0,0,0,0.05);
+    }
+
+    .feature-box:hover { transform: translateY(-15px); border-bottom: 8px solid var(--main-red); }
+
+    .feature-box i { font-size: 3.5rem; color: var(--main-blue); margin-bottom: 20px; display: block; }
+
+    /* زر التسجيل */
+    .btn-reg {
+      background: var(--primary-gradient);
+      color: white;
+      padding: 12px 35px;
+      border-radius: 50px;
+      font-weight: 800;
+      text-decoration: none;
+      box-shadow: 0 10px 20px rgba(178, 31, 31, 0.2);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header-glass sticky-top">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="text-decoration-none">
+        <h1 class="logo-text m-0"><span>Star</span> Of Tabarbour</h1>
+      </a>
+
+      <nav class="navmenu d-none d-lg-block">
+        <ul>
+          <li><a href="index.html">الرئيسية</a></li>
+          <li><a href="about.html">عن المدرسة</a></li>
+          <li><a href="courses.html">البرامج</a></li>
+          <li><a href="trainers.html">كادرنا</a></li>
+          <li class="nav-item">
+  <a class="nav-link fw-bold text-dark" href="careers.html">الوظائف</a>
+</li>
+          <li><a href="contact.html">تواصل معنا</a></li>
+        </ul>
+      </nav>
+
+      <a href="courses.html" class="btn-reg">سجل الآن</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-full">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-6 hero-content" data-aos="fade-left">
+            <h2>نصنعُ <span style="color: var(--main-gold);">المستقبل</span> بأيدي مبدعة</h2>
+            <p>مدرسة نجمة طبربور الدولية، حيث يلتقي الشغف بالتعلم مع أحدث تقنيات العصر في بيئة تربوية ملهمة.</p>
+            <div class="d-flex gap-3 mt-4">
+              <a href="#features" class="btn btn-warning btn-lg rounded-pill px-5 fw-bold">استكشف برامجنا</a>
+              <a href="contact.html" class="btn btn-outline-light btn-lg rounded-pill px-5 fw-bold">تواصل معنا</a>
+            </div>
+          </div>
+          <div class="col-lg-6 hero-img-container" data-aos="zoom-in">
+            <img src="assets/img/tabarbour.jpg" alt="مدرسة نجمة طبربور">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="container py-5">
+      <div class="features-grid">
+        
+        <div class="feature-box" data-aos="fade-up" data-aos-delay="100">
+          <i class="bi bi-rocket-takeoff"></i>
+          <h3 class="fw-bold">برامج الروبوتكس</h3>
+          <p class="text-muted">ننمي مهارات الذكاء الاصطناعي والبرمجة لدى طلابنا منذ الصغر.</p>
+        </div>
+
+        <div class="feature-box" data-aos="fade-up" data-aos-delay="200">
+          <i class="bi bi-mortarboard-fill"></i>
+          <h3 class="fw-bold">كادر دولي</h3>
+          <p class="text-muted">نخبة من المعلمين المختصين لضمان جودة تعليمية عالمية.</p>
+        </div>
+
+        <div class="feature-box" data-aos="fade-up" data-aos-delay="300">
+          <i class="bi bi-palette-fill"></i>
+          <h3 class="fw-bold">أنشطة إبداعية</h3>
+          <p class="text-muted">ملاعب، فنون، ومختبرات علمية متطورة لتفريغ طاقات الطلاب.</p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <footer class="py-5 text-center mt-5" style="background: var(--main-blue); color: white;">
+    <p class="mb-0">© 2026 مدرسة نجمة طبربور الدولية - جميع الحقوق محفوظة</p>
+  </footer>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script> AOS.init({ duration: 1000 }); </script>
+</body>
+</html>

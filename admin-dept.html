@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>نخبة الإدارة | مدرسة نجمة طبربور</title>
+  
+  <link href="assets/vendor/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --primary-gradient: linear-gradient(45deg, #1a2a6c, #b21f1f, #fdbb2d);
+      --main-blue: #1a2a6c;
+      --main-red: #b21f1f;
+      --main-gold: #fdbb2d;
+    }
+
+    body { 
+      font-family: 'Cairo', sans-serif; 
+      background: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    /* --- الهيدر الاحترافي --- */
+    .header-glass {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 2px solid rgba(26, 42, 108, 0.1);
+      padding: 15px 0;
+    }
+
+    .logo-text {
+      font-size: 1.8rem;
+      font-weight: 900;
+      background: linear-gradient(45deg, var(--main-blue), var(--main-red));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -1px;
+    }
+    
+    .logo-text span {
+      color: var(--main-gold);
+      -webkit-text-fill-color: var(--main-gold);
+    }
+
+    .btn-back {
+      background: white;
+      color: var(--main-blue);
+      border: 2px solid var(--main-blue);
+      padding: 8px 25px;
+      border-radius: 50px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      transition: all 0.4s ease;
+      text-decoration: none;
+    }
+
+    .btn-back:hover {
+      background: var(--primary-gradient);
+      color: white;
+      border-color: transparent;
+      transform: translateX(-10px); /* حركة لليار لتناسب العربي */
+      box-shadow: 0 8px 20px rgba(26, 42, 108, 0.2);
+    }
+
+    /* --- قسم الترحيب Hero --- */
+    .hero-section {
+      background: var(--primary-gradient);
+      background-size: 400% 400%;
+      animation: gradientBG 10s ease infinite;
+      color: white;
+      padding: 100px 0 150px;
+      text-align: center;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    }
+
+    @keyframes gradientBG {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    /* --- بطاقات المدراء --- */
+    .admin-card {
+      background: rgba(255, 255, 255, 0.85);
+      backdrop-filter: blur(15px);
+      border-radius: 30px;
+      border: 1px solid rgba(255,255,255,0.4);
+      box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+      margin-top: -80px;
+      padding: 40px 20px;
+      transition: 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+
+    .admin-card:hover {
+      transform: translateY(-10px);
+      background: rgba(255, 255, 255, 0.95);
+    }
+
+    .photo-frame {
+      width: 150px;
+      height: 150px;
+      margin: 0 auto 20px;
+      border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
+      overflow: hidden;
+      border: 5px solid white;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+      animation: morphing 8s infinite;
+    }
+
+    @keyframes morphing {
+      0%, 100% { border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%; }
+      50% { border-radius: 70% 30% 30% 70% / 70% 70% 30% 30%; }
+    }
+
+    .photo-frame img { width: 100%; height: 100%; object-fit: cover; }
+
+    .role-badge {
+      background: var(--primary-gradient);
+      color: white;
+      padding: 5px 20px;
+      border-radius: 50px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+
+    /* --- بطاقات المحاسبة والـ HR --- */
+    .support-card {
+      background: white;
+      border-radius: 25px;
+      padding: 25px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+      border-right: 10px solid var(--main-gold);
+      transition: 0.3s;
+      margin-bottom: 20px;
+    }
+
+    .support-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 15px 40px rgba(0,0,0,0.1);
+    }
+
+    .support-img {
+      width: 110px;
+      height: 110px;
+      border-radius: 20px;
+      object-fit: cover;
+      margin-left: 20px; /* للهامش بين الصورة والنص في الـ RTL */
+      border: 3px solid #f8f9fa;
+    }
+
+    .icon-circle {
+      width: 40px;
+      height: 40px;
+      background: #f8f9fa;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--main-blue);
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+  <header class="header sticky-top header-glass p-3">
+    <div class="container d-flex justify-content-between align-items-center">
+      <a href="index.html" class="text-decoration-none">
+        <h2 class="logo-text m-0"><span>Star</span> Of Tabarbour</h2>
+      </a>
+      <a href="trainers.html" class="btn-back">
+        العودة للأقسام
+        <i class="bi bi-arrow-left-circle-fill"></i>
+      </a>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="container">
+      <h1 class="display-3 fw-bold mb-3">القيادة التربوية</h1>
+      <p class="lead fs-4">نعمل بشغف لنصنع جيلاً واثقاً ومبدعاً</p>
+    </div>
+  </section>
+
+  <main class="container py-5">
+    <div class="row g-4 justify-content-center">
+      
+      <div class="col-lg-4">
+        <div class="admin-card text-center">
+          <div class="photo-frame">
+            <img src="assets/img/trainers/marwan.jpg" alt="المدير العام">
+          </div>
+          <span class="role-badge">المدير العام</span>
+          <h3 class="fw-bold text-dark">الإدارة العليا</h3>
+          <p class="text-muted px-2">"التعليم هو المفتاح لفتح أبواب المستقبل المشرق لأبنائنا."</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="admin-card text-center">
+          <div class="photo-frame">
+            <img src="assets/img/trainers/mohammed.jpg" alt="مدير الذكور">
+          </div>
+          <span class="role-badge">قسم البنين</span>
+          <h3 class="fw-bold text-dark">مدير القسم</h3>
+          <p class="text-muted px-2">"نسعى لبناء شخصية متكاملة للطالب تجمع بين العلم والأخلاق."</p>
+        </div>
+      </div>
+
+      <div class="col-lg-4">
+        <div class="admin-card text-center">
+          <div class="photo-frame">
+            <img src="assets/img/trainers/admin-3.jpg" alt="مديرة الإناث">
+          </div>
+          <span class="role-badge">قسم البنات</span>
+          <h3 class="fw-bold text-dark">مديرة القسم</h3>
+          <p class="text-muted px-2">"الإبداع يبدأ ببيئة تعليمية محفزة وداعمة لمواهب طالباتنا."</p>
+        </div>
+      </div>
+
+    </div>
+
+    <div class="row mt-5 pt-5">
+      <div class="col-12 text-center mb-4">
+        <h2 class="fw-bold" style="color: var(--main-blue);">الدوائر الإدارية والمالية</h2>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="support-card">
+          <img src="assets/img/trainers/accounting.jpg" class="support-img" alt="المحاسبة">
+          <div>
+            <div class="icon-circle"><i class="bi bi-wallet2"></i></div>
+            <h4 class="fw-bold mb-1">الدائرة المالية</h4>
+            <p class="text-muted small mb-0">إدارة الأقساط المدرسية وخدمات الدفع الإلكتروني بكل سهولة.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6">
+        <div class="support-card" style="border-right-color: var(--main-red);">
+          <img src="assets/img/trainers/hr.jpg" class="support-img" alt="الموارد البشرية">
+          <div>
+            <div class="icon-circle" style="color: var(--main-red);"><i class="bi bi-people-fill"></i></div>
+            <h4 class="fw-bold mb-1">الموارد البشرية</h4>
+            <p class="text-muted small mb-0">نهتم بالكادر التعليمي لنضمن وصول أفضل الخبرات لطلابنا.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="text-center py-4">
+    <p class="text-muted">© 2026 مدرسة نجمة طبربور - جميع الحقوق محفوظة</p>
+  </footer>
+
+</body>
+</html>

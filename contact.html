@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>تواصل معنا | مدرسة نجمة طبربور الدولية</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --main-blue: #1a2a6c;
+      --main-red: #b21f1f;
+      --main-gold: #fdbb2d;
+      --bg-gradient: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    }
+
+    body { 
+      font-family: 'Cairo', sans-serif; 
+      background: var(--bg-gradient);
+      min-height: 100vh;
+    }
+
+    /* --- الهيدر المتناسق --- */
+    .header-glass {
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(10px);
+      border-bottom: 3px solid var(--main-gold);
+      padding: 15px 0;
+    }
+
+    .sitename { 
+      font-size: 1.8rem; font-weight: 900; 
+      background: linear-gradient(45deg, var(--main-blue), var(--main-red)); 
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; 
+    }
+
+    /* --- قسم العنوان --- */
+    .contact-hero {
+      background: linear-gradient(45deg, var(--main-blue), var(--main-red));
+      padding: 80px 0 120px;
+      color: white;
+      text-align: center;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+    }
+
+    /* --- كرت التواصل --- */
+    .contact-wrapper {
+      margin-top: -80px;
+      margin-bottom: 50px;
+    }
+
+    .info-box {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      height: 100%;
+      transition: 0.3s;
+    }
+
+    .info-box:hover { transform: translateY(-5px); }
+
+    .info-box i {
+      font-size: 2.5rem;
+      color: var(--main-red);
+      margin-bottom: 15px;
+      display: inline-block;
+    }
+
+    .contact-form-card {
+      background: white;
+      padding: 40px;
+      border-radius: 30px;
+      box-shadow: 0 15px 45px rgba(0,0,0,0.1);
+    }
+
+    .form-control {
+      border-radius: 12px;
+      padding: 12px 20px;
+      border: 1px solid #ddd;
+      margin-bottom: 15px;
+    }
+
+    .form-control:focus {
+      border-color: var(--main-blue);
+      box-shadow: 0 0 0 0.25 margin-top: rgba(26, 42, 108, 0.1);
+    }
+
+    .btn-send {
+      background: var(--main-blue);
+      color: white;
+      border: none;
+      padding: 12px 40px;
+      border-radius: 50px;
+      font-weight: 700;
+      width: 100%;
+      transition: 0.3s;
+    }
+
+    .btn-send:hover {
+      background: var(--main-red);
+      transform: scale(1.02);
+    }
+
+    .map-container {
+      border-radius: 25px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      margin-top: 30px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header-glass sticky-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="text-decoration-none"><h1 class="sitename m-0">نجمة طبربور</h1></a>
+      <nav class="navmenu d-none d-lg-block">
+        <ul class="d-flex list-unstyled gap-4 mb-0">
+          <li><a href="index.html" class="fw-bold text-dark text-decoration-none">الرئيسية</a></li>
+          <li><a href="trainers.html" class="fw-bold text-dark text-decoration-none">الأقسام</a></li>
+          <li><a href="events.html" class="fw-bold text-dark text-decoration-none">الأنشطة</a></li>
+          <li><a href="contact.html" class="fw-bold text-danger text-decoration-none border-bottom border-2 border-danger">اتصل بنا</a></li>
+        </ul>
+      </nav>
+      <a href="index.html" class="btn btn-outline-primary rounded-pill px-4 fw-bold">العودة للرئيسية</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="contact-hero">
+      <div class="container" data-aos="fade-up">
+        <h1 class="display-4 fw-bold">يسعدنا التواصل معكم</h1>
+        <p class="fs-5 opacity-75">نحن هنا للإجابة على استفساراتكم ومساعدتكم في رحلة أبنائكم التعليمية</p>
+      </div>
+    </section>
+
+    <div class="container contact-wrapper">
+      <div class="row g-4 text-center mb-5">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="info-box">
+            <i class="bi bi-geo-alt"></i>
+            <h5 class="fw-bold">موقعنا</h5>
+            <p class="text-muted">الأردن - عمان - طبربور<br>نجمة طبربور الدولية</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="info-box">
+            <i class="bi bi-telephone"></i>
+            <h5 class="fw-bold">اتصل بنا</h5>
+            <p class="text-muted">هاتف المدرسة: 06XXXXXXX <br> موبايل: 07XXXXXXXX</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="info-box">
+            <i class="bi bi-envelope"></i>
+            <h5 class="fw-bold">البريد الإلكتروني</h5>
+            <p class="text-muted">info@tabarbourstar.edu.jo<br>admin@tabarbourstar.com</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="row g-5">
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="contact-form-card">
+            <h3 class="fw-bold text-primary mb-4">أرسل لنا رسالة</h3>
+            <form action="#">
+              <div class="row">
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="الاسم الكامل" required>
+                </div>
+                <div class="col-md-6">
+                  <input type="email" class="form-control" placeholder="البريد الإلكتروني" required>
+                </div>
+              </div>
+              <input type="text" class="form-control" placeholder="الموضوع">
+              <textarea class="form-control" rows="5" placeholder="رسالتك أو استفسارك هنا..." required></textarea>
+              <button type="submit" class="btn btn-send">إرسال الرسالة الآن</button>
+            </form>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="map-container h-100">
+  <iframe 
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3383.670081699042!2d35.9526762758151!3d31.98957437400329!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151b61006dc3bdff%3A0xbc8f1ecae621d4c2!2z2YXYr9in2LHYsyDZhti62YXYqSDYt9io2LHYqNmI2LEg2KfZhNiv2YjZhNmK2Kkg2YHYsdi5IDIK!5e0!3m2!1sar!2sjo!4v1716300000000!5m2!1sar!2sjo" 
+    width="100%" 
+    height="100%" 
+    style="border:0; min-height: 450px;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-4 text-center">
+    <div class="container">
+      <div class="social-links mb-3">
+        <a href="#" class="btn btn-outline-dark btn-sm rounded-circle me-2"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="btn btn-outline-dark btn-sm rounded-circle me-2"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="btn btn-outline-dark btn-sm rounded-circle"><i class="bi bi-whatsapp"></i></a>
+      </div>
+      <p class="text-muted small mb-0">© 2026 مدرسة نجمة طبربور الدولية - Amman, Jordan</p>
+    </div>
+  </footer>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script> AOS.init({ duration: 1000, once: true }); </script>
+</body>
+</html>

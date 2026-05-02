@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>الأقسام الأكاديمية | مدرسة نجمة طبربور الدولية</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+
+  <link href="assets/vendor/bootstrap/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <style>
+    :root {
+      --main-blue: #1a2a6c;
+      --main-red: #b21f1f;
+      --main-gold: #fdbb2d;
+      --bg-gradient: linear-gradient(135deg, #e0eafc 0%, #cfdef3 100%);
+    }
+
+    body {
+      font-family: 'Cairo', sans-serif;
+      background: var(--bg-gradient);
+      min-height: 100vh;
+    }
+
+    /* --- الهيدر الفخم --- */
+    .header-glass {
+      background: rgba(255, 255, 255, 0.9);
+      backdrop-filter: blur(10px);
+      border-bottom: 3px solid var(--main-gold);
+      padding: 15px 0;
+    }
+
+    .sitename {
+      font-size: 1.8rem; font-weight: 900;
+      background: linear-gradient(45deg, var(--main-blue), var(--main-red));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent;
+    }
+
+    /* --- بطاقات الأقسام --- */
+    .dept-card {
+      background: white;
+      border-radius: 20px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+      transition: 0.4s;
+      border: none;
+      height: 100%;
+      text-align: center;
+      padding: 30px 20px;
+    }
+
+    .dept-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 40px rgba(26, 42, 108, 0.2);
+      background: var(--main-blue);
+      color: white;
+    }
+
+    .dept-icon {
+      font-size: 3rem;
+      color: var(--main-red);
+      margin-bottom: 20px;
+      transition: 0.4s;
+    }
+
+    .dept-card:hover .dept-icon {
+      color: var(--main-gold);
+    }
+
+    .dept-card h3 {
+      font-weight: 800;
+      font-size: 1.4rem;
+      margin-bottom: 15px;
+    }
+
+    .btn-enter {
+      background: var(--main-blue);
+      color: white;
+      border: none;
+      padding: 8px 25px;
+      border-radius: 50px;
+      font-weight: 700;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .dept-card:hover .btn-enter {
+      background: var(--main-gold);
+      color: var(--main-blue);
+    }
+  </style>
+</head>
+
+<body>
+
+  <header class="header-glass sticky-top">
+    <div class="container d-flex align-items-center justify-content-between">
+      <a href="index.html" class="text-decoration-none"><h1 class="sitename m-0">نجمة طبربور</h1></a>
+      <nav class="d-none d-lg-block">
+        <ul class="nav gap-3">
+          <li><a href="index.html" class="nav-link fw-bold">الرئيسية</a></li>
+          <li><a href="trainers.html" class="nav-link fw-bold text-danger">الأقسام</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="py-5">
+    <div class="container">
+      <div class="text-center mb-5" data-aos="fade-up">
+        <h2 class="display-5 fw-bold" style="color: var(--main-blue);">الأقسام الأكاديمية</h2>
+        <p class="text-muted">هيكل الأقسام المنظم حسب الأولوية الإدارية والتعليمية</p>
+      </div>
+
+      <div class="row g-4">
+        
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="dept-card">
+            <i class="bi bi-person-badge dept-icon"></i>
+            <h3>قسم الإدارة</h3>
+            <p>القيادة التربوية والرقمنة الإدارية للمدرسة.</p>
+            <a href="admin-dept.html" class="btn-enter">دخول القسم</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="dept-card">
+            <i class="bi bi-calculator dept-icon"></i>
+            <h3>قسم الرياضيات</h3>
+            <p>تنمية المهارات الحسابية والمنطق الرياضي.</p>
+            <a href="math-dept.html" class="btn-enter">دخول القسم</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="dept-card">
+            <i class="bi bi-flask dept-icon"></i>
+            <h3>قسم العلوم</h3>
+            <p>استكشاف الطبيعة، الفيزياء، الكيمياء والأحياء.</p>
+            <a href="science-dept.html" class="btn-enter">دخول القسم</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="dept-card">
+            <i class="bi bi-cpu dept-icon"></i>
+            <h3>قسم التكنولوجيا</h3>
+            <p>المهارات الرقمية، البرمجة، وعالم الروبوتكس.</p>
+            <a href="tech-dept.html" class="btn-enter">دخول القسم</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="500">
+          <div class="dept-card">
+            <i class="bi bi-book dept-icon"></i>
+            <h3>قسم اللغة العربية</h3>
+            <p>لغة الضاد، البيان، والأدب العربي الأصيل.</p>
+            <a href="arabic-dept.html" class="btn-enter">دخول القسم</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="600">
+          <div class="dept-card">
+            <i class="bi bi-translate dept-icon"></i>
+            <h3>قسم اللغة الإنجليزية</h3>
+            <p>إتقان اللغة العالمية تواصلاً وكتابةً.</p>
+            <a href="english-dept.html" class="btn-enter">دخول القسم</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="700">
+          <div class="dept-card">
+            <i class="bi bi-moon-stars dept-icon"></i>
+            <h3>قسم التربية الإسلامية</h3>
+            <p>غرس القيم الدينية والأخلاق الإسلامية السامية.</p>
+            <a href="islamic-dept.html" class="btn-enter">دخول القسم</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="800">
+          <div class="dept-card">
+            <i class="bi bi-globe-americas dept-icon"></i>
+            <h3>قسم الدراسات الاجتماعية</h3>
+            <p>التاريخ، الجغرافيا، والتربية الوطنية.</p>
+            <a href="social-dept.html" class="btn-enter">دخول القسم</a>
+          </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="900">
+          <div class="dept-card">
+            <i class="bi bi-tools dept-icon"></i>
+            <h3>القسم المهني</h3>
+            <p>المهارات الحياتية والأعمال اليدوية والمهنية.</p>
+            <a href="vocational-dept.html" class="btn-enter">دخول القسم</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <footer class="py-4 text-center mt-5 border-top bg-white">
+    <p class="mb-0 text-muted small">© 2026 مدرسة نجمة طبربور الدولية - تنظيم الأقسام الأكاديمية</p>
+  </footer>
+
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script> AOS.init({ duration: 800, once: true }); </script>
+</body>
+</html>
